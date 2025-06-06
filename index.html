@@ -222,12 +222,17 @@
   </ul>
 </section>
 
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="IA.png" alt="IA Futurista" style="max-width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+</div>
+
 <section id="graficos" class="container">
   <h1>Simulação de Gráficos</h1>
   
-  <canvas id="graficoLinha" width="400" height="200"></canvas>
-  <canvas id="graficoBarra" width="400" height="200"></canvas>
-  <canvas id="graficoPizza" width="400" height="200"></canvas>
+  <canvas id="graficoLinha" width="300" height="150"></canvas>
+  <canvas id="graficoBarra" width="300" height="150"></canvas>
+  <canvas id="graficoPizza" width="300" height="150"></canvas>
 </section>
 
 <section id="contato" class="container">
@@ -259,9 +264,9 @@
       datasets: [{
         label: 'Crescimento de Dados',
         data: [12, 19, 3, 5, 2, 10],
-        borderColor: '#000',
-        backgroundColor: 'rgba(0, 0, 0, 0.2)',
-        tension: 0.4,
+        borderColor: 'rgba(52, 73, 94, 1)',
+        backgroundColor: 'rgba(41, 128, 185, 0.2)',
+        tension: 0.5,
         borderWidth: 2
       }]
     },
@@ -273,14 +278,16 @@
       plugins: {
         legend: {
           labels: {
-            color: '#000'
+            color: '#555',
+            font: {size: 14}
           }
         }
       },
       scales: {
         y: {
           ticks: {
-            color: '#000'
+            color: '#555',
+            font: {size: 12}
           },
           grid: {
             color: 'rgba(0, 0, 0, 0.1)'
@@ -288,7 +295,8 @@
         },
         x: {
           ticks: {
-            color: '#000'
+            color: '#555',
+            font: {size: 12}
           },
           grid: {
             color: 'rgba(0, 0, 0, 0.1)'
@@ -307,14 +315,9 @@
       datasets: [{
         label: 'Precisão (%)',
         data: [85, 90, 75, 80],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.6)',
-          'rgba(54, 162, 235, 0.6)',
-          'rgba(255, 206, 86, 0.6)',
-          'rgba(75, 192, 192, 0.6)'
-        ],
-        borderColor: '#000',
-        borderWidth: 1
+        backgroundColor: ['rgba(52, 73, 94, 0.7)', 'rgba(41, 128, 185, 0.7)', 'rgba(39, 174, 96, 0.7)', 'rgba(127, 140, 141, 0.7)'],
+        borderColor: 'rgba(52, 73, 94, 1)',
+        borderWidth: 2
       }]
     },
     options: {
@@ -325,14 +328,16 @@
       plugins: {
         legend: {
           labels: {
-            color: '#000'
+            color: '#555',
+            font: {size: 14}
           }
         }
       },
       scales: {
         y: {
           ticks: {
-            color: '#000'
+            color: '#555',
+            font: {size: 12}
           },
           grid: {
             color: 'rgba(0, 0, 0, 0.1)'
@@ -340,7 +345,8 @@
         },
         x: {
           ticks: {
-            color: '#000'
+            color: '#555',
+            font: {size: 12}
           },
           grid: {
             color: 'rgba(0, 0, 0, 0.1)'
@@ -359,13 +365,8 @@
       datasets: [{
         label: 'Fontes de Dados',
         data: [30, 25, 20, 25],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.7)',
-          'rgba(54, 162, 235, 0.7)',
-          'rgba(255, 206, 86, 0.7)',
-          'rgba(75, 192, 192, 0.7)'
-        ],
-        borderColor: '#000',
+        backgroundColor: ['rgba(52, 73, 94, 0.7)', 'rgba(41, 128, 185, 0.7)', 'rgba(39, 174, 96, 0.7)', 'rgba(127, 140, 141, 0.7)'],
+        borderColor: 'rgba(52, 73, 94, 1)',
         borderWidth: 2
       }]
     },
@@ -378,7 +379,8 @@
       plugins: {
         legend: {
           labels: {
-            color: '#000'
+            color: '#555',
+            font: {size: 14}
           }
         }
       }
